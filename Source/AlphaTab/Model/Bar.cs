@@ -90,7 +90,7 @@ namespace AlphaTab.Model
                 }
                 if (voice.MaxDuration == null || MaxDuration == null || MaxDuration.Value < voice.MaxDuration.Value)
                 {
-                    MinDuration = voice.MaxDuration;
+                    MaxDuration = voice.MaxDuration;
                 }
             }
         }
