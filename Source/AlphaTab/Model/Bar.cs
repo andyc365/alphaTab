@@ -88,7 +88,7 @@ namespace AlphaTab.Model
                 {
                     MinDuration = voice.MinDuration;
                 }
-                if (voice.MaxDuration == null || MaxDuration == null || MaxDuration.Value > voice.MaxDuration.Value)
+                if (voice.MaxDuration == null || MaxDuration == null || MaxDuration.Value < voice.MaxDuration.Value)
                 {
                     MinDuration = voice.MaxDuration;
                 }
